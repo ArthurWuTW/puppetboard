@@ -1,15 +1,17 @@
 import secrets
+PUPPETDB_HOST = 'puppetdb'
+PUPPETDB_PORT = 8081
+PUPPETDB_SSL_VERIFY=False
+PUPPETDB_KEY='/home/arthur/Desktop/ssl-pb/ssl/private.pem'
+PUPPETDB_CERT='/home/arthur/Desktop/ssl-pb/ssl/public.pem'
+SECRET_KEY='3103a805942d799d6745074370f72a37701574636f53848d8d9874af23cc0024'
 
-PUPPETDB_HOST = 'localhost'
-PUPPETDB_PORT = 8080
+
+
 PUPPETDB_PROTO = None
-PUPPETDB_SSL_VERIFY = True
-PUPPETDB_KEY = None
-PUPPETDB_CERT = None
 PUPPETDB_TIMEOUT = 20
 DEFAULT_ENVIRONMENT = 'production'
 # this empty string has to be changed, we validate it with check_secret_key()
-SECRET_KEY = ''  # nosec
 UNRESPONSIVE_HOURS = 2
 ENABLE_QUERY = True
 # Uncomment to restrict the enabled PuppetDB endpoints in the query page.

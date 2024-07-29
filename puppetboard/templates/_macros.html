@@ -114,9 +114,7 @@
 
         return `<a title="${data[1]}" href="${url}">${to_show}</a>`
       },
-      {% if natural_time_delta_sort %}
-      "type": "natural-time-delta",
-      {% endif %}
+      "type": "natural",
     },
     {% else -%}
     {
